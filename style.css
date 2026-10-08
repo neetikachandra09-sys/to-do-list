@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #17142b,
+        #30204f
+    );
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+
+    background-color: #151528;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+
+    color: #a970ff;
+
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #aaa;
+
+    margin-bottom: 30px;
+}
+
+.input-section {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+#taskInput {
+    flex: 1;
+
+    padding: 14px;
+
+    border: 1px solid #443267;
+
+    border-radius: 8px;
+
+    background-color: #0e0e1c;
+
+    color: white;
+
+    font-size: 16px;
+}
+
+#taskInput:focus {
+    outline: none;
+
+    border-color: #a970ff;
+}
+
+button {
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #a970ff;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8d4ff0;
+}
+
+#taskList {
+    list-style: none;
+}
+
+.task {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    background-color: #20203a;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #a970ff;
+}
+
+.task-text {
+    flex: 1;
+
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+
+    color: #777;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+
+    padding: 8px 12px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
